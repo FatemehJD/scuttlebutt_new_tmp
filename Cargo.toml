@@ -28,7 +28,7 @@ generic-array = "0.14.6"
 smallvec = "1.10.0"
 bytemuck = { version = "1.12.3", features = ["derive"] }
 vectoreyes.workspace = true
-ndarray.workspace = true
+ndarray = "0.15.6"
 num-traits = "0.2.15"
 # ff = { workspace = true, features = ["derive"], optional = true }
 
