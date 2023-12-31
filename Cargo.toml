@@ -30,7 +30,7 @@ bytemuck = { version = "1.12.3", features = ["derive"] }
 vectoreyes.workspace = true
 ndarray.workspace = true
 num-traits = "0.2.15"
-ff = { workspace = true, features = ["derive"], optional = true }
+# ff = { workspace = true, features = ["derive"], optional = true }
 
 [build-dependencies]
 ff_codegen = { workspace = true, optional = true }
