@@ -12,6 +12,7 @@ publish = false
 
 [features]
 ff = ["dep:ff", "dep:ff_codegen", "rand_chacha"]
+ff = { git = "https://github.com/GaloisInc/ff", rev = "b8d8570f67d04cf5a8b82df3d6eb36aeb4732e92" }
 nightly = ["curve25519-dalek/nightly", "curve25519-dalek/simd_backend"]
 unstable = []
 serde = []
