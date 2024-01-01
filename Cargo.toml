@@ -34,7 +34,7 @@ num-traits = "0.2.15"
 
 [build-dependencies]
 ff = { git = "https://github.com/GaloisInc/ff", rev = "b8d8570f67d04cf5a8b82df3d6eb36aeb4732e92", optional = true }
-ff_codegen = { git = "https://github.com/GaloisInc/ff", rev = "b8d8570f67d04cf5a8b82df3d6eb36aeb4732e92" }
+ff_codegen = { git = "https://github.com/GaloisInc/ff", rev = "b8d8570f67d04cf5a8b82df3d6eb36aeb4732e92" , optional = true}
 tempfile = "3.3.0"
 sha2 = "0.10.6"
 
