@@ -16,7 +16,7 @@ use std::{
     ops::{AddAssign, MulAssign, SubAssign},
 };
 use subtle::{Choice, ConditionallySelectable, ConstantTimeEq};
-use std::convert::TryFrom;
+use std::convert::{TryFrom, TryInto};
 
 /// A field element in the prime-order finite field $\textsf{GF}(2).$
 #[derive(Debug, Eq, Clone, Copy, Hash, bytemuck::Zeroable)]
