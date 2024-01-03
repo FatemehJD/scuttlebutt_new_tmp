@@ -11,6 +11,7 @@ use std::{
     ops::{AddAssign, Mul, MulAssign, SubAssign},
 };
 use subtle::{Choice, ConditionallySelectable, ConstantTimeEq};
+use std::convert::TryFrom;
 
 use super::IsSubFieldOf;
 
