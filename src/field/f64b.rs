@@ -8,6 +8,7 @@ use std::iter::FromIterator;
 use std::ops::{AddAssign, MulAssign, SubAssign};
 use subtle::{Choice, ConditionallySelectable, ConstantTimeEq};
 use vectoreyes::{SimdBase, U64x2};
+use std::convert::TryFrom;
 
 use super::IsSubFieldOf;
 
