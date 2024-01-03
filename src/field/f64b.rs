@@ -11,6 +11,8 @@ use vectoreyes::{SimdBase, U64x2};
 
 use super::IsSubFieldOf;
 
+use std::convert::TryFrom;
+
 /// An element of the finite field $`\textsf{GF}({2^{64}})`$ reduced over $`x^{64} + x^{19} + x^{16} + x + 1`$.
 #[derive(Debug, Clone, Copy, Hash, Eq)]
 pub struct F64b(u64);
