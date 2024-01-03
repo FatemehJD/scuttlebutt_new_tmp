@@ -1,6 +1,7 @@
 //! Defines a 512-bit value.
 use crate::Block;
 use std::hash::Hash;
+use std::convert::TryFrom;
 
 /// A 512-bit value.
 #[derive(
