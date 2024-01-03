@@ -5,6 +5,7 @@ use generic_array::GenericArray;
 use rand_core::RngCore;
 use std::ops::{AddAssign, MulAssign, SubAssign};
 use subtle::{Choice, ConditionallySelectable, ConstantTimeEq};
+use std::convert::TryFrom;
 
 /// A finite field over the Mersenne Prime 2^61 - 1
 #[derive(Clone, Copy, Eq, Debug, Hash)]
