@@ -1,3 +1,5 @@
+use std::convert::TryFrom;
+
 mod hash_channel;
 mod sync_channel;
 mod track_channel;
