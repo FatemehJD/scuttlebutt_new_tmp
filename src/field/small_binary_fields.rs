@@ -12,6 +12,7 @@ use vectoreyes::{
     array_utils::{ArrayUnrolledExt, ArrayUnrolledOps, UnrollableArraySize},
     SimdBase, U64x2,
 };
+use std::convert::TryFrom;
 
 /// A GF(2) extension field such that:
 /// 1. `Self` is `repr(transparent)` to a `u64`
