@@ -183,6 +183,8 @@ pub mod serde_vec {
                     Some(n) => n,
                     None => return Err(A::Error::missing_field("number of elements")),
                 };
+                let fat:u64 = 5;
+                println!("{:?}", usize::try_from(fat));
                 let nelements = usize::try_from(nelements).map_err(|e| Error::custom(e))?;
                 let nbytes = F::Serializer::serialized_size(nelements);
 
