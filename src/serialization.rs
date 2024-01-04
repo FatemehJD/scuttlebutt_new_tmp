@@ -7,7 +7,6 @@ use std::{
     io::{Read, Write},
     marker::PhantomData,
 };
-use std::convert::TryFrom;
 
 /// Types that implement this trait have a canonical serialization and a fixed
 /// serialization size.
@@ -179,6 +178,7 @@ pub mod serde_vec {
             where
                 A: serde::de::SeqAccess<'de>,
             {
+                use std::convert::TryFrom;
                 let nelements: u64 = match seq.next_element::<u64>()? {
                     Some(n) => n,
                     None => return Err(A::Error::missing_field("number of elements")),
