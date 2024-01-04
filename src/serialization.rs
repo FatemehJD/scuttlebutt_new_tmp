@@ -6,8 +6,8 @@ use serde::{de::DeserializeOwned, Serialize};
 use std::{
     io::{Read, Write},
     marker::PhantomData,
-    convert::TryFrom,
 };
+use std::convert::TryFrom;
 
 /// Types that implement this trait have a canonical serialization and a fixed
 /// serialization size.
